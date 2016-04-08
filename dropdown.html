@@ -1,0 +1,7 @@
+<div class="form-control">
+    <label ng-class="{required: req == true}" for="{{fieldName}}">{{label}}</label>
+    <select ng-disabled="ngDisabled" ng-class="{ 'disabled': ngDisabled }" ng-model="ngModel" ng-required="req == true" ng-options="item.CODE as item.NAME for item in list" id="{{fieldName}}" name="{{fieldName}}" ng-change="change()">
+        <option ng-show="!noValue" selected="selected" value="">{{placeholder}}</option>
+    </select>
+    <span class="form-error">&nbsp;</span>
+</div>
